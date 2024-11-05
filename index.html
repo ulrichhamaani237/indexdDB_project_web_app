@@ -1,13 +1,52 @@
 <!doctype html>
+<html>
 <script src="https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js"></script>
 
 <button onclick="addBook()">Add a book</button>
 <button onclick="clearBooks()">Clear books</button>
+<head>
+  <style>
+    .glass {
+      z-index: 1000;
+      position: absolute;
+      left: 200px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.3px);
+-webkit-backdrop-filter: blur(12.3px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+height: 200px;
+width: 400px;
+    }
+    body {
+      background-color: black;
+    }
 
-<p>Books list:</p>
+    .text{
+      top: 200px;
+      position: absolute;
+      font-size: 100px;
+      color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+  <p>Books list:</p>
+
+<div class="text">
+  HI ZOERERRRE
+</div>
 
 <ul id="listElem"></ul>
 
+<div class="glass">
+
+</div>
+</body>
+
+</html>
 <script>
 let db;
 
